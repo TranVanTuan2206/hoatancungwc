@@ -1,6 +1,5 @@
 MATCH = [
   {
-    id: 1,
     name: "Na Uy - Brazil",
     result: "2-1",
     guest: {
@@ -8,6 +7,26 @@ MATCH = [
       anh: "1-1",
       ha: "2-0",
       phuoc: "2-3",
+    },
+  },
+  {
+    name: "Argentina - Mexico",
+    result: "2-3",
+    guest: {
+      tuan: "10-3",
+      anh: "1-1",
+      ha: "2-1",
+      phuoc: "2-2",
+    },
+  },
+  {
+    name: "Argentina - Mexico",
+    result: "2-3",
+    guest: {
+      tuan: "10-3",
+      anh: "1-1",
+      ha: "2-1",
+      phuoc: "2-2",
     },
   },
 ];
