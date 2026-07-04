@@ -75,7 +75,7 @@ table tr:nth-child(even) {
 table tr td {
     padding: 8px;
 }
-table tr.sub-row-header {
+table.sub-table tr.sub-row-header {
     border-right: 1px solid #9fd5ee;
     border-left: 1px solid #9fd5ee;
     background-color: #9fd5ee;
@@ -83,10 +83,14 @@ table tr.sub-row-header {
 
     font-weight: bold;
 }
-table tr.sub-row {
+table.sub-table tr.sub-row {
     border-right: 1px solid #9fd5ee;
     border-left: 1px solid #9fd5ee;
     border-bottom: 1px solid #9fd5ee;
+}
+
+table.sub-table tr th, table.sub-table tr td {
+    font-size: 14px;
 }
 
 
@@ -103,4 +107,19 @@ table tr.sub-row {
     color: rgb(158, 158, 158);
     font-weight: bold;
     font-size: 24px;
+}
+
+.law-btn {
+    width: 100%;
+    min-height: 32px;
+    background-color: #4d2efa;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
 }

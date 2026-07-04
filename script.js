@@ -46,6 +46,13 @@ const displayDetail = {
   phuoc: false,
 };
 
+let isShowLaw = false;
+function showLawToggle() {
+  isShowLaw = !isShowLaw;
+  const lawDiv = document.getElementById("law");
+  lawDiv.style.display = isShowLaw ? "block" : "none";
+}
+
 function calculatePNum() {
   PLAYERS = PLAYERS.map((player) => {
     MATCH.forEach((match) => {
@@ -81,7 +88,7 @@ function displayDetails(account) {
             <td class="text-center">${totalPNum}</td>
         </tr>`;
     });
-    document.getElementById(account).innerHTML = `<table onclick="displayDetails('${account}')">${htmlString}</table>`;
+    document.getElementById(account).innerHTML = `<table class="sub-table" onclick="displayDetails('${account}')">${htmlString}</table>`;
   } else {
     document.getElementById(account).innerHTML = "";
   }
